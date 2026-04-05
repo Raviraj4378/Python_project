@@ -2,7 +2,7 @@ const API = "https://web-production-30add.up.railway.app";
 
 async function loadMarkets() {
     try {
-        aconst res = await fetch(`${API}/markets`);
+        const res = await fetch(`${API}/markets`);
         if (!res.ok) {
             throw new Error(`HTTP error! status: ${res.status}`);
         }
